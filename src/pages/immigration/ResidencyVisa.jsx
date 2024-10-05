@@ -10,8 +10,8 @@ import {
 import buttonimg from '../../assets/images/submitBtn.png'
 import { Link } from 'react-router-dom';
 import banner1 from '../../assets/images/acb_1_2.png'
-import qtImage from '../../assets/images/Comma.png';
-import qt2Image from '../../assets/images/Comma2.png';
+import qtImage from '../../assets/images/comma.png';
+import qt2Image from '../../assets/images/comma2.png';
 
 function ResidencyVisa() {
   return (
