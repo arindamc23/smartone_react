@@ -1,0 +1,43 @@
+.legalText{
+    padding: 30px 80px 40px 80px!important;
+}
+
+.legalText h2{
+    font-weight: 400;
+    font-size: 63px;
+    line-height: 76px;
+    color: #000206;
+}
+
+.legalText p{
+    font-size: 18px;
+    line-height: 26px;
+    padding-left: 31% !important;
+}
+
+
+.legalLeft{
+    background:#0657DE ;
+    padding: 0 !important;
+}
+.legalLeft p{
+    font-weight: 400;
+    font-size: 23px;
+    line-height: 33px;
+    color: #F9F9F9;
+}
+.legalRight{
+    padding: 0 !important;
+    height: 100%;
+    width: 100%;
+}
+.legalRight img{
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+}
+
+.legalBanner{
+    height: 500px;
+    overflow: hidden;
+}

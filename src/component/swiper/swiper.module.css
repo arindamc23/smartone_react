@@ -1,0 +1,76 @@
+@font-face {
+    font-family: 'Helvetica', sans-serif;
+    src: url('../fonts/Helvetica.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display:swap;
+  }
+@font-face {
+    font-family: 'Helvetica', sans-serif;
+    src: url('../fonts/Helvetica-Bold.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+    font-display:swap;
+  }
+  @font-face {
+    font-family: 'Helvetica', sans-serif;
+    src: url('../fonts/Helvetica-Oblique.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display:swap;
+  }
+
+.SwiperCard{
+    border-radius: 0 !important;
+    border: none !important;
+    box-shadow:inherit !important;
+    background: transparent !important;
+    padding: 55px 15px 0 15px;
+}
+
+.SwiperBody{
+    padding: 0 !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.SwiperBody h5{
+    font-family: 'Helvetica', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 31px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    padding-top:40px;
+    /* height: 150px; */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 2;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    margin-bottom: 20px;
+}
+
+
+.SwiperBody p{
+    font-family: 'Helvetica', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    color: #FFFFFF;
+}
+
+.SwiperBody a{
+    font-family: 'Helvetica', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16.2644px;
+    line-height: 32px;
+    color: #FFFFFF;
+}
+
+
+

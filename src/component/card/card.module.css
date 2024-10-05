@@ -1,0 +1,36 @@
+.TextBody{
+    padding:0px 35px 0 0 !important;
+}
+
+.TextBody h5{
+    font-weight: 700;
+    font-size: 27.0125px;
+    line-height: 31px;
+    letter-spacing: -0.025em;
+    text-transform: uppercase;
+    color: #000000;
+}
+
+.TextBody p{
+    font-size: 16.2953px;
+    line-height: 25px;
+    font-weight: 400;        
+    letter-spacing: -0.025em;
+    color: #000000;
+}
+
+.Text{
+    border: none !important;
+    box-shadow: inherit !important;
+    border-radius: 0 !important;
+}
+
+.TextBody a{
+    font-family: 'Helvetica';
+font-style: normal;
+font-weight: 700;
+font-size: 14.6658px;
+line-height: 29px;
+letter-spacing: -0.025em;
+color: #000000;
+}

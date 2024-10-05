@@ -1,0 +1,2728 @@
+@font-face {
+    font-family: 'Helvetica', sans-serif;
+    src: url('../assets/fonts/Helvetica.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Helvetica', sans-serif;
+    src: url('../assets/fonts/Helvetica-Bold.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Helvetica', sans-serif;
+    src: url('../assets/fonts/Helvetica-Oblique.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+.homeContainer {
+    padding: 0px 80px !important;
+}
+
+.designImg {
+    width: 100%;
+    padding: 0 !important;
+}
+
+.designImg p {
+    position: absolute;
+    bottom: 25px;
+    left: 20px;
+    font-size: 50px !important;
+    line-height: 54px !important;
+    color: #FFFFFF !important;
+    text-shadow: 0px 0px 31px rgba(0, 0, 0, 0.25);
+    white-space: nowrap;
+    transform: translateX(0);
+    /* transition: 2s; */
+
+}
+
+.textCard {
+    border: none !important;
+    box-shadow: inherit !important;
+    border-radius: 0 !important;
+    position: relative;
+    height: 100%;
+}
+
+
+.textCard a {
+    color: #000;
+    border: 2px solid #000206;
+    border-radius: 62px;
+    padding: 22px 28px;
+    font-family: 'Helvetica', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    margin-top: 30px;
+    display: block;
+    width: fit-content;
+}
+
+.textCard a:hover {
+    background-color: #000;
+    color: #fff;
+
+}
+
+.textCard h5 {
+    font-family: 'Helvetica', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 45px;
+    line-height: 57px;
+    color: #000000;
+}
+
+
+.textCard p {
+    font-family: 'Helvetica', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 34px;
+    color: #000206;
+    transition: left 1s linear;
+    width: 84%;
+}
+
+
+.Card:hover img {
+    opacity: 0.2;
+}
+
+.Card:hover::before {
+    display: none;
+}
+
+.Card:hover p {
+    left: -92%;
+    transition: left 2.5s linear;
+    font-size: 195px !important;
+    color: #fff;
+    opacity: 1;
+    z-index: 1;
+    font-weight: 300;
+    bottom: 50px;
+    text-transform: uppercase;
+}
+
+.Card:hover p small {
+    visibility: visible;
+    font-size: 195px !important;
+}
+
+.designImg small {
+    visibility: hidden;
+}
+
+/* .Card:hover small{
+    visibility: visible;
+}
+
+.Card:hover p{
+    visibility: visible;
+    z-index: 9999;
+    position: absolute;
+    text-transform: uppercase;
+    transform: translateX(calc(200px - 100%));
+    font-size:100px !important;
+} */
+.clickBtn {
+    position: absolute !important;
+    top: -200px;
+    right: 111px;
+    border-radius: 50% !important;
+    font-size: 16px !important;
+    text-align: center !important;
+    border: 1px solid #fff !important;
+    padding: 15px 10px !important;
+    width: 80px;
+    height: 80px;
+    z-index: 1;
+    transition: 0.5s all !important;
+    text-transform: capitalize !important;
+    opacity: 0;
+}
+
+.clickBtn:hover {
+    background-color: #000 !important;
+}
+
+.Card:hover .clickBtn {
+    top: 48px;
+    opacity: 1;
+}
+
+.legalTitle {
+    position: absolute;
+    top: 30px;
+    left: 25px;
+}
+
+.designImg img {
+    width: 100%;
+    object-fit: cover;
+    border: 1px solid #000;
+    height: 100%;
+}
+
+
+.Card {
+    border: none !important;
+    box-shadow: inherit !important;
+    background: #0657DE !important;
+    border-radius: 0 !important;
+    position: relative;
+    overflow: hidden;
+    height: 100% !important;
+}
+
+
+
+.Banner .Card:first-child {
+    background: transparent !important;
+}
+
+.Banner .Card:last-child {
+    height: 300px !important;
+}
+
+.Card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    right: 0;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 100%);
+}
+
+
+.legalCard .Card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    right: 0;
+    background: linear-gradient(180deg, #000000 -1.24%, rgba(0, 0, 0, 0.35) 30.79%, rgba(0, 0, 0, 0) 100%);
+}
+
+.legalCard:hover p {
+    left: -281% !important;
+    bottom: auto;
+    top: 8% !important;
+    transition: left 3.5s linear !important;
+}
+
+.legalCard .clickBtn {
+    right: 40%;
+}
+
+.legalCard:hover .clickBtn {
+    top: 40%;
+}
+
+.ImmigrationCard .Card {
+    height: 384px !important;
+}
+
+.ImmigrationCard .Card:hover:first-child p {
+    left: -437% !important;
+    transition: left 4.5s linear !important;
+
+}
+
+.ImmigrationCard .Card:last-child p span {
+    display: block;
+}
+
+.ImmigrationCard .Card:hover:last-child p span {
+    display: inline-flex;
+}
+
+.ImmigrationCard .Card:hover:last-child p {
+    left: -531% !important;
+    transition: left 5.5s linear !important;
+
+}
+
+.ImmigrationCard .Card .clickBtn {
+
+    right: 40%;
+}
+
+.ImmigrationCard .Card:hover .clickBtn {
+    top: 22%;
+}
+
+.Banner .Card:first-child::before {
+    display: none;
+}
+
+.Card a {
+    color: #000;
+    border: 2px solid #000206;
+    border-radius: 62px;
+    padding: 22px 28px;
+    font-family: 'Helvetica', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    margin-top: 30px;
+    display: block;
+    width: fit-content;
+}
+
+
+
+.homeContainer .Card a {
+    color: #fff;
+    border: 2px solid #000206;
+    border-radius: 62px;
+    padding: 22px 28px;
+    font-family: 'Helvetica', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    margin-top: 30px;
+    display: flex;
+    width: 80px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    background: #0d6efd;
+}
+
+.Card h5 {
+    font-family: 'Helvetica', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 45px;
+    line-height: 57px;
+    color: #000000;
+}
+
+
+.Card p {
+    font-family: 'Helvetica', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 34px;
+    color: #000206;
+}
+
+.Banner {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    position: relative;
+}
+
+
+
+/* ------------------------------------------------------------ */
+
+/* Text-section */
+.CardContainer {
+    display: flex;
+    align-items: end;
+    padding: 85px 0 50px 0;
+    border-bottom: 1px solid #000;
+}
+
+.Text {
+    border: none !important;
+    box-shadow: inherit !important;
+    border-radius: 0 !important;
+}
+
+.leftText {
+    padding: 0 !important;
+}
+
+.leftText h5 {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 51.8171px;
+    line-height: 66px;
+    color: #000000;
+    padding-right: 21%;
+}
+
+.rightText {
+    padding: 0 0 2% 37% !important;
+}
+
+.rightText p {
+    font-family: 'Helvetica', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    text-align: justify;
+    color: #000206;
+}
+
+.service {
+    padding: 100px 0 120px 0;
+}
+
+/* -----------------------------------insights------------------- */
+.Insights {
+    padding: 80px 0px;
+    background: #000000;
+}
+
+.TextInsight {
+    border: none !important;
+    box-shadow: inherit !important;
+    border-radius: 0 !important;
+    background: transparent !important;
+    margin-bottom: 50px;
+}
+
+.TextInsight h5,
+.TextInsight p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 62px;
+    line-height: 67px;
+    color: #FFFFFF;
+
+}
+
+.TextInsight p {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 42px;
+}
+
+
+/* ----------------------------form section------------------------------------------ */
+
+.leftSide {
+    padding: 0 25% 0 0 !important;
+}
+
+.leftSide p {
+    font-family: 'Helvetica', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 51px;
+    line-height: 64px;
+    color: #141414;
+}
+
+
+
+.rightSide {
+    font-family: 'Helvetica', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    padding: 0 13% 0 13% !important;
+    line-height: 32px;
+    color: #000206;
+}
+
+.rightSide span {
+    color: #024AC3;
+    font-weight: 600;
+}
+
+.homeForm {
+    padding: 0 13% 0 13% !important;
+    margin: 70px 0px;
+    position: relative;
+}
+
+.homeForm input {
+    border-bottom: 1px solid #646568 !important;
+    border: none;
+    border-radius: 0;
+    padding: 0;
+}
+
+.homeForm input:focus {
+    box-shadow: inherit !important;
+    background-color: transparent !important;
+    color: #000 !important;
+}
+
+.homeForm span {
+    position: absolute;
+    right: 13%;
+    color: #646568;
+    font-size: 18px;
+}
+
+/* ::placeholder {
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 34px;
+    letter-spacing: -0.025em;
+} */
+
+
+.formContainer {
+    padding: 120px 80px 0 80px !important;
+}
+
+.sendBtn button {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    background: transparent;
+    border-color: #000 !important;
+}
+
+.sendBtn {
+    text-align: end;
+    margin-top: 50px;
+}
+
+.sendBtn img {
+    width: 45px;
+    margin: 7px 7px 0 0;
+}
+
+.TextInsight a {
+    font-family: 'Helvetica', sans-serif;
+    font-style: normal;
+    font-weight: 500 !important;
+    font-size: 18px !important;
+    line-height: 42px;
+    color: #FFFFFF !important;
+}
+
+
+
+
+
+/* ----------------------------legal--------------------------------- */
+.legalText {
+    padding: 80px 80px 40px 80px !important;
+}
+
+.legalText h2 {
+    color: #000206;
+    font-weight: 500;
+    font-size: 70px;
+    line-height: 80px;
+}
+
+.legalText p {
+    font-size: 22px;
+    line-height: 38px;
+    width: 90%;
+    margin-left: auto;
+    color: #000206;
+    padding-top: 20px;
+}
+
+.legalCard {
+    border: 1px solid #000000 !important;
+    padding: 0 !important;
+    border-left: none !important;
+    border-right: none !important;
+    box-shadow: inherit !important;
+    border-radius: 0 !important;
+}
+
+.legalLeft {
+    background: #0657DE;
+}
+
+.CardBody {
+    padding: 0 80px !important;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-right: 1px solid #000;
+}
+
+.CardBody p {
+    font-size: 23px;
+    line-height: 33px;
+    color: #F9F9F9;
+    width: 97%;
+}
+
+.CardBody a {
+    color: #fff;
+    border: 2px solid #ffff;
+    border-radius: 62px;
+    padding: 22px 28px;
+    font-family: 'Helvetica', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    margin-top: 30px;
+    display: block;
+    width: fit-content;
+}
+
+.CardBody a:hover {
+    background-color: #000;
+    color: #fff;
+
+}
+
+.legalContainer {
+    padding: 80px 80px 20px 80px !important;
+    border-bottom: 1px solid #000 !important;
+}
+
+.infoText span {
+    display: block;
+    color: #000206;
+}
+
+.infoText ul {
+    padding: 0;
+}
+
+.infoText ul li {
+    list-style-type: none;
+    border-bottom: 1px solid #000000;
+    font-weight: 400;
+    font-size: 42px;
+    line-height: 112px;
+    color: #000000;
+}
+
+.legalAnim {
+    padding: 80px 0 80px 0;
+}
+
+.contactCard {
+    border-radius: 0 !important;
+    padding: 0 !important;
+    border: none !important;
+    box-shadow: inherit !important;
+}
+
+.contactBody {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.contactBody a {
+    color: #fff;
+    border: 2px solid #ffff;
+    border-radius: 62px;
+    padding: 22px 28px;
+    font-weight: 700;
+    font-size: 16px;
+    margin-top: 30px;
+    display: block;
+    width: fit-content;
+}
+
+.contactBody a:hover {
+    background-color: #000;
+    color: #fff;
+
+}
+
+
+.legalAnim .Card::before {
+    display: none;
+}
+
+
+.legalAnim .cardImgSec img {
+    opacity: 1;
+    z-index: 3;
+    position: relative;
+}
+
+.legalAnim .Card p {
+    left: 52%;
+    font-size: 180px !important;
+    font-weight: 300;
+    bottom: 83px;
+    text-transform: uppercase;
+}
+
+.legalAnim .Card:hover p {
+    left: 49%;
+}
+
+.legalAnim .clickBtn {
+    right: 40%;
+}
+
+
+.CompanyInfo p {
+    font-weight: 400;
+    font-size: 50px;
+    line-height: 68px;
+    color: #000000;
+}
+
+.CompanyInfo span {
+    display: block;
+}
+
+.CompanyInfo ul {
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+
+.CompanyInfo ul li {
+    list-style-type: none;
+    width: calc((100% - 0px) / 3);
+    padding: 40px 100px;
+}
+
+.CompanyInfo ul li h5 {
+    font-size: 23px;
+    line-height: 30px;
+    color: #000206;
+    font-weight: 700;
+    list-style-type: none;
+
+}
+
+.CompanyInfo ul li {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    color: #000000;
+}
+
+.CompanyInfo ul li:nth-child(1),
+.CompanyInfo ul li:nth-child(4),
+.CompanyInfo ul li:nth-child(7) {
+    padding-left: 0;
+}
+
+.CompanyInfo ul li:nth-child(3),
+.CompanyInfo ul li:nth-child(6),
+.CompanyInfo ul li:nth-child(9) {
+    padding-right: 0;
+}
+
+
+.legalImg img {
+    width: 100%;
+    object-fit: contain;
+}
+
+.DocsInfo p {
+    font-weight: 400;
+    font-size: 50px;
+    line-height: 68px;
+    color: #000000;
+}
+
+.DocsInfo p span {
+    display: block;
+}
+
+.DocsInfo ul li h5 {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 32px;
+    color: #000206;
+}
+
+.DocsInfo ul li span {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 33px;
+    color: #000000;
+    display: block;
+}
+
+.DocsInfo ul li {
+    padding-bottom: 50px;
+    list-style-type: none;
+}
+
+.legalAccount .legalCard {
+    border: none !important;
+}
+
+.legalAccount .CardBody {
+    border: none !important;
+}
+
+.legalAccount .CardBody p {
+    margin-bottom: 0;
+}
+
+.legalAccount .CardBody ol {
+    padding-left: 20px
+}
+
+.legalAccount .CardBody ol li {
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 33px;
+    color: #F9F9F9;
+}
+
+.eligibility h5 {
+    font-weight: 400;
+    font-size: 50px;
+    line-height: 68px;
+    color: #000000;
+}
+
+.eligibilityRow {
+    border-radius: 0px !important;
+    box-shadow: inherit !important;
+    border: 0 !important;
+    padding-top: 40px !important;
+}
+
+.eligibilityCard {
+    background: #E6E6E6;
+    padding-top: 170px !important;
+}
+
+.eligibilityCard p {
+    width: 40%;
+    padding-top: 20px;
+}
+
+.accountImg {
+    padding: 100px 0;
+}
+
+.accountText span {
+    display: block;
+    color: #000206;
+}
+
+.accountText .accountPara {
+    font-weight: 400;
+    font-size: 50px;
+    line-height: 68px;
+}
+
+.accountImg ul {
+    display: flex;
+    padding: 0px;
+    justify-content: space-between;
+}
+
+.accountImg ul li {
+    list-style-type: none;
+    text-align: center;
+
+}
+
+.accountImg ul li p {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 35px;
+}
+
+.accountImg img {
+    height: 50px;
+    display: block;
+    margin: auto;
+    margin-bottom: 30px;
+}
+
+
+.bankContainer {
+    padding: 80px 80px 20px 80px !important;
+}
+
+.bankRowOne {
+    padding-bottom: 100px;
+}
+
+.bankRowOne h1 {
+    font-weight: 400;
+    font-size: 50px;
+    line-height: 68px;
+    color: #000000;
+}
+
+.bankRowOne span {
+    display: block;
+}
+
+.bankCard {
+    border-radius: 0 !important;
+    box-shadow: inherit !important;
+    background: #000000 !important;
+}
+
+.bankCard h5 {
+    font-weight: 400;
+    font-size: 90px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #F9F9F9;
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.corporate .bankCard {
+    background: #0657DE !important;
+}
+
+.bankCard img {
+    border-radius: 0px !important;
+    opacity: 0.3;
+}
+
+.thailandOffice {
+    background: #0657DE;
+    padding: 80px 80px;
+}
+
+.thailandOffice h5 {
+    font-weight: 400;
+    font-size: 118.558px;
+    color: #F9F9F9;
+}
+
+
+.officeDiv p {
+    font-weight: 400;
+    font-size: 23px;
+    line-height: 42px;
+    color: #F9F9F9;
+}
+
+.thailandOffice span {
+    display: block;
+}
+
+.officeDiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.comma span:last-child {
+    text-align: end;
+}
+
+.comma p {
+    padding: 0px 80px 0px 80px;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 65px;
+    color: #F9F9F9;
+}
+
+.thailandOffice ol {
+    width: 53%;
+    margin-left: auto;
+    padding-top: 50px;
+}
+
+.thailandOffice ol li {
+    font-weight: 400;
+    font-size: 23px;
+    line-height: 53px;
+    color: #F9F9F9;
+}
+
+
+.blackTheme {
+    background: #141414;
+    padding: 150px 80px;
+    font-size: 23px;
+    line-height: 42px;
+    letter-spacing: -0.025em;
+    color: #F9F9F9;
+}
+
+.leftDiv p {
+    width: 42%;
+}
+
+.rightDiv ol {
+    width: 50%;
+    margin-left: auto;
+
+}
+
+.rightDiv ol li {
+    line-height: 53px !important;
+}
+
+.bandCard {
+    border: none !important;
+    box-shadow: inherit !important;
+    border-radius: 0 !important;
+    padding: 100px 0;
+}
+
+.bandCard h5 {
+    font-weight: 400;
+    font-size: 50px;
+    line-height: 68px;
+    color: #000000;
+    width: 80%;
+    padding-bottom: 40px;
+}
+
+.bandCard p {
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 42px;
+    color: #141414;
+    width: 97%;
+}
+
+.activityContainer {
+    padding: 30px 80px 20px 80px !important;
+}
+
+.activityContainer h5 {
+    font-weight: 400;
+    font-size: 40px;
+    color: #000000;
+    letter-spacing: 0;
+}
+
+.activityInfo p {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 33px;
+    color: #000000;
+    padding-top: 20px;
+}
+
+.activityInfo ul {
+    padding: 60px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+
+.activityInfo ul li {
+    list-style-type: none;
+    width: calc((100% - 0px) / 4);
+    padding: 40px
+}
+
+.activityInfo ul li:nth-child(1),
+.activityInfo ul li:nth-child(5),
+.activityInfo ul li:nth-child(9) {
+    padding-left: 0;
+}
+
+.activityInfo ul li:nth-child(4),
+.activityInfo ul li:nth-child(8),
+.activityInfo ul li:nth-child(12) {
+    padding-right: 0;
+}
+
+/* ----------------------------legal--------------------------------- */
+
+
+
+/*------------------Account_page------------------------------*/
+
+.accountText {
+    padding: 60px 80px 30px 80px !important;
+}
+
+.accountText h2 {
+    color: #000206;
+    font-weight: 500;
+    font-size: 70px;
+    line-height: 80px;
+}
+
+.accountText p {
+    font-size: 22px;
+    line-height: 38px;
+    color: #000206;
+    width: 85%;
+    margin-left: auto;
+}
+
+.upBanner {
+    align-items: center;
+    justify-content: center;
+}
+
+.upBanner .bannerText {
+    border: 1px solid #000000 !important;
+    padding: 0 !important;
+    border-left: 0 !important;
+    height: 502px;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 90px !important;
+    background: #0657DE;
+}
+
+.upBanner .bannerImg {
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+}
+
+.upBanner .bannerImg img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
+
+.upBanner .bannerText p {
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 46px;
+    color: #F9F9F9;
+}
+
+.book_btn {
+    color: #fff;
+    border: 2px solid #fff;
+    border-radius: 62px;
+    padding: 22px 28px;
+    font-weight: 700;
+    font-size: 16px;
+    margin-top: 30px;
+    display: block;
+    width: fit-content;
+    font-family: 'Helvetica', sans-serif !important;
+}
+
+.book_btn:hover {
+    background: #000;
+    color: #fff;
+}
+
+.bannerImg2 {
+    padding: 60px 0 !important;
+}
+
+.bannerImg2 img {
+    height: 625px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.accountSec2 {
+    background: #141414;
+    padding: 100px 80px !important;
+}
+
+.accountSec2 p {
+    color: #F0F0F0
+}
+
+.accountSec2 ul {
+    padding: 0;
+    margin: 50px 0;
+}
+
+.accountSec2 ul li {
+    display: block;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 112px;
+    color: #F0F0F0;
+    border-bottom: 1px solid #F0F0F0;
+}
+
+.quoteSec{
+    margin-bottom: 8%;
+}
+
+.quoteSec h5 {
+    padding: 1% 5%;
+    color: #fff;
+    line-height: 1.8;
+    font-size: 32px;
+}
+
+.quoteSec span:last-child {
+    float: right;
+}
+
+.accountSec3 {
+    padding: 0 !important;
+}
+
+.accountSec3 ul {
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+
+.accountSec3 ul li {
+    display: flex;
+    border-bottom: 1px solid #000;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    background: #0657DE;
+}
+
+.acct_text {
+    padding: 4%;
+
+}
+
+.acct_text h4 {
+    font-weight: 400;
+    font-size: 85px;
+    line-height: 110px;
+    color: #FFFFFF;
+}
+
+.acct_text p {
+    color: #fff;
+    margin: 6% 0;
+    width: 98%;
+    display: block;
+    line-height: 40px;
+}
+
+.accountSec3 ul li:nth-child(2n+2) {
+    flex-direction: row-reverse;
+    background: #fff;
+}
+
+.accountSec3 ul li:nth-child(2n+2) h4 {
+    color: #000;
+}
+
+.accountSec3 ul li:nth-child(2n+2) p {
+    color: #000;
+}
+
+.accountSec3 ul li:nth-child(2n+2) .book_btn {
+    border-color: #000;
+    color: #000
+}
+
+.accountSec3 ul li img {
+    width: 45%;
+}
+
+.accountSec3 ul li:nth-child(3),
+.accountSec3 ul li:nth-child(6) {
+    background: #000;
+}
+
+.accountSec3 ul li:nth-child(6) .acct_text h4,
+.accountSec3 ul li:nth-child(6) .acct_text p {
+    color: #fff;
+}
+
+.accountSec3 ul li:nth-child(6) .book_btn {
+    border-color: #fff;
+    color: #fff
+}
+
+.house_keep .accountSec2 ul {
+    margin-bottom: 0
+}
+
+.house_keep .accountSec2:first-child {
+    background: #fff !important
+}
+
+.house_keep .accountSec2:last-child {
+    background: #0657DE;
+}
+.house_keep .accountSec2:first-child p {
+    color: #000
+}
+
+.house_keep .accountSec2:first-child ul li {
+    color: #000;
+    border-color: #000
+}
+
+.add_service {
+    padding: 130px 160px !important
+}
+
+.add_service h4 {
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 50px;
+    color: #000;
+    margin-bottom: 50px;
+}
+
+.add_service p {
+    font-size: 22px;
+    line-height: 36px;
+    letter-spacing: normal;
+    color: #141414;
+    width: 90%;
+    position: relative;
+    padding-left: 30px;
+    margin-bottom: 6px;
+}
+
+.add_service p span {
+    position: absolute;
+    top: 0;
+    left: 0
+}
+
+.add_service .pt-19 {
+    padding-top: 19rem !important;
+    display: block
+}
+
+.secontP {
+    margin-left: auto
+}
+
+.secontP p {
+    margin-left: 10%;
+    width: 96%
+}
+
+.blackText h4,
+.blackText p {
+    color: #f0f0f0
+}
+
+
+/* -------immigration------------ */
+.immiSec2 {
+    background: #141414;
+    padding: 100px 80px !important;
+}
+
+.immiSec2 .immiDiv {
+    width: 54%;
+    margin-left: auto;
+}
+
+.immiDiv p {
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 38px;
+    color: #000000;
+    text-align: justify;
+}
+
+.immiSec1 .immiPara {
+    padding-top: 20%;
+}
+
+.immiSec1 .quoteSec h5 {
+    font-weight: 400;
+    font-size: 41px;
+    line-height: 68px;
+    color: #F9F9F9;
+}
+
+.immiSec1 {
+    background: #141414;
+    padding: 100px 80px !important;
+    color: #fff;
+}
+
+.immiContent p {
+    margin-bottom: 0;
+    font-weight: 400;
+    font-size: 21px;
+    line-height: 42px;
+    color: #F9F9F9;
+}
+
+.immiContent4 p {
+    width: 85%;
+    margin-left: auto;
+}
+
+.immiTextSec2 {
+    background: #141414;
+    padding: 100px 80px !important;
+    color: #fff;
+}
+
+.airportImg {
+    width: 100%;
+    background: linear-gradient(180deg, #0657DE 0%, rgba(6, 87, 222, 0) 130.94%);
+}
+
+.airportImg img {
+    width: 100%;
+    object-fit: cover;
+    opacity: 0.3;
+}
+
+.airportText p {
+    width: 50%;
+    margin-left: auto;
+}
+
+.airportText1 p,
+.airportText p {
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 50px;
+    color: #F9F9F9;
+}
+
+.immiSec3 {
+    background: #0657DE;
+    padding: 100px 80px !important;
+    font-weight: 400;
+    font-size: 23px;
+    line-height: 50px;
+    color: #F9F9F9;
+}
+
+.accountSec3 ul li:nth-child(2n+2) .book_btn:hover {
+    border-color: #fff;
+    color: #fff;
+}
+
+.immiSecText p {
+    width: 70%;
+    line-height: 40px;
+    font-size: 22px;
+}
+
+.immiSecText1 p {
+    width: 54%;
+    margin-left: auto;
+}
+
+.immiSecText2 p {
+    width: 57%;
+}
+
+.actsList {
+    padding: 100px 80px !important;
+    font-weight: 400;
+    font-size: 23px;
+    line-height: 47px;
+    color: #000000;
+}
+
+.actText1 div:first-child {
+    width: 43%;
+}
+
+.actText1 div:last-child {
+    width: 36%;
+    margin-left: auto;
+    padding-top: 10%;
+
+}
+
+.actText2 div:first-child {
+    width: 43%;
+}
+
+.actText2 div:last-child {
+    width: 36%;
+    margin-left: auto;
+    padding-top: 15%;
+}
+
+.actText3 div:first-child {
+    width: 36%;
+}
+
+.actText3 div:last-child {
+    width: 36%;
+    margin-left: auto;
+    padding-top: 15%;
+}
+
+.accountSec3 .immiList li:nth-child(4) {
+    background: #024AC3 !important;
+
+}
+
+.accountSec3 .immiList li:nth-child(4) h4,
+.accountSec3 .immiList li:nth-child(4) p,
+.accountSec3 .immiList li:nth-child(4) a {
+    color: #fff !important;
+    border-color: #fff !important;
+}
+
+.accountSec3 .immiList li:nth-child(5) {
+    background: #ffff !important;
+}
+
+.accountSec3 .immiList li:nth-child(5) h4,
+.accountSec3 .immiList li:nth-child(5) p,
+.accountSec3 .immiList li:nth-child(5) a {
+    color: #000 !important;
+    border-color: #000 !important;
+}
+.accountSec3 .immiList li:nth-child(5) a:hover{
+    color: #fff !important;
+}
+
+
+.accountSec3 .immiList li:last-child {
+    background: #000 !important;
+}
+
+
+/* -------------------smartvisa------------------------------- */
+
+
+.bannerSec {
+    position: relative;
+
+}
+
+.bannerSec::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 85%;
+    background: rgb(0, 0, 0);
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(255, 255, 255, 1) 100%);
+}
+
+.upBanner2 p {
+    width: 60%;
+    margin: auto;
+    padding-top: 25%;
+}
+
+.smartvisaForm {
+    background: #000;
+    padding: 100px 80px !important;
+    color: #fff !important;
+}
+
+.visaFormText p {
+    font-weight: 400;
+    font-size: 64.481px;
+    line-height: 85px;
+    width: 100%;
+}
+
+.visaForm form{
+    padding:55% 0 15% 0 !important;
+    width: 80%;
+    margin-left: auto;
+}
+
+.visaForm input {
+    background-color: transparent !important;
+    border: none;
+    border-radius: 0;
+    padding: 0;
+    border-bottom: 1px solid #fff;
+    color: #fff !important;
+    box-shadow: none !important;
+}
+
+.visaForm::placeholder {
+    color: #fff;
+
+}
+
+.visaSendBtn button {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    background: transparent;
+    border-color: #fff !important;
+}
+
+.visaSendBtn {
+    text-align: end;
+    margin-top: 50px;
+}
+
+.visaSendBtn img {
+    width: 45px;
+    margin: 7px 7px 0 0;
+}
+
+.visaForm span {
+    position: absolute;
+    right:80px;
+    color: #ffff;
+}
+
+.smartcontent {
+    padding: 100px 80px !important;
+}
+
+.smartcontent h5 {
+    font-weight: 400;
+    font-size: 38px;
+    line-height: 53px;
+    padding: 1% 5%;
+}
+
+.smartComma span:last-child {
+    text-align: end;
+}
+ .smartComma h5{
+    font-weight: 400;
+    font-size: 40px;
+    line-height:58px;
+    padding: 1% 5%;
+}
+
+.visaText p {
+    width: 29%;
+    margin-left: auto;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 37px;
+    color: #141414;
+}
+
+
+
+
+/* -----------------------------------Bvisa----------------------------------- */
+
+.BvisaSec4 {
+    background: #141414;
+    padding: 100px 80px !important;
+}
+
+.BvisaSec4 h5, .BvisaSec5 h5{
+    font-weight: 400;
+    font-size: 75px;
+    line-height: 94px;
+    color: #F0F0F0;
+}
+
+.BvisaSec4 p{
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 38px;
+    color: #F0F0F0;
+}
+
+.BvisaSec5{
+    background:#0657DE;
+    padding: 100px 80px !important;
+}
+
+.BvisaText1 p{
+    width: 55%;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 38px;
+    color: #F0F0F0;
+}
+.BvisaText2 p{
+    width: 51%;
+    margin-left: auto;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 38px;
+    color: #F0F0F0;
+}
+
+.BvisaSec6{
+    background:#fff;
+    padding: 100px 80px !important;
+}
+
+.BvisaSec6 h5{
+    font-weight: 400;
+    font-size: 75px;
+    line-height: 94px;
+}
+.BvisaSec7{
+    background:#0657DE;
+    padding: 100px 80px !important;
+}
+.BvisaSecComma span:last-child{
+    float: right;
+}
+.BvisaSecComma h5{
+    font-weight: 400;
+    font-size: 38px;
+    line-height: 53px;
+    padding: 1% 5%;
+}
+.BvisaSec7{
+    background:#000;
+    padding: 100px 80px !important;
+}
+.BvisaSec7 p{
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 38px;
+    color: #F0F0F0;
+}
+.BvisaSec7 h5{
+    font-weight: 400;
+    font-size: 75px;
+    line-height: 94px;
+    color: #F0F0F0;
+}
+.NonImmiText1 p{
+   
+    width: 66%;
+    margin-left: auto;
+}
+
+.NonImmiText2 p{
+    width: 57%;
+}
+
+.NonImmiText3 p{
+    width: 80%;
+    margin-left: auto;
+    padding-top: 25% !important;
+}
+
+.NonImmiText4 p{
+    width: 50%;
+}
+/* -----------------------RetirementVisa---------------------------- */
+.retireText{
+    padding: 1% 5%;
+    
+}
+
+.retireText p{
+    font-size: 22px;
+    line-height: 37px;
+}
+
+
+
+.retireText2 p{
+    width: 50%;
+    margin-left: auto;
+    margin-bottom: 0px;
+    padding-bottom: 10px;
+    position: relative;
+    padding-left:50px;
+}
+.retireText2 p span{
+    width: 50%;
+    margin-left: auto;
+    margin-bottom: 0px;
+    padding-bottom: 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.retireText3 p{
+    width: 41%;
+}
+
+.retireText4 p{
+    width: 35%;
+    margin-left: auto;
+}
+.retireText5{
+    border-top: 1px solid #FFFFFF;
+
+}
+.retireText5 h3{
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 40px;
+    color: #F0F0F0;
+}
+.retireTextPara{
+    width: 45%;
+}
+
+.retireTextPara p{
+    line-height:40px;
+    position: relative;
+    padding-left: 30px;
+}
+.retireTextPara p span{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.retireText5 p{
+    margin-bottom:10px;
+}
+
+
+.investText1 p {
+    width:60%;
+    margin-left: auto;
+    margin-bottom: 0px;
+    padding-bottom: 10px;
+    position: relative;
+    padding-left: 50px;
+}
+.investText1 p span{
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.investText p{
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 37px;
+    color: #fff;
+}
+
+.retireText6 p{
+    font-size: 30px;
+    width: 38%;
+}
+/*-------------education visa--------------------*/
+.eduVisa p{
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 37px;
+    color: #141414;
+    width: 45%;
+}
+
+
+
+
+.MarriageSec{
+    background:#000;
+    padding: 100px 80px !important;
+}
+.marriageText p span{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.marriageText p {
+    position: relative;
+    padding-left: 50px;
+}
+.marriageText{
+    width: 54%;
+    margin-left: auto;
+}
+.accountSec4 {
+    background: #141414;
+    padding: 100px 80px !important;
+}
+
+.accountSec4 p {
+    color: #F0F0F0
+}
+
+.accountSec4 ul {
+    padding: 0;
+    margin: 50px 0;
+}
+
+.accountSec4 ul li {
+    display: block;
+    font-weight: 400;
+    font-size: 42px;
+    line-height: 112px;
+    color: #F0F0F0;
+    border-bottom: 1px solid #F0F0F0;
+}
+.residenceText1 p{
+    width: 43%;
+}
+
+.residenceText2 p{
+    width: 47%;
+    margin-left: auto;
+    padding-top: 50px;
+}
+
+.residenceText3 h3{
+    font-weight: 400;
+    font-size: 55px;
+    line-height: 74px;
+    color: #F0F0F0;
+}
+
+
+
+.residenceText4 p{
+    width: 50%;
+    margin-left: auto;
+    position: relative;
+    padding-left: 50px;
+}
+.residenceText4 p span{ 
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.residenceSec{
+    background:#0657DE;
+    padding: 100px 80px !important;
+}
+
+.residenceText5 p{
+    width: 53%;
+}
+
+.residenceText6 p{
+    width: 55%;
+    margin-left: auto;
+    padding-top: 100px;
+}
+
+.residenceFormText p{
+    font-size: 75.481px;
+    line-height: 92px;
+    letter-spacing: -0.04em;
+    color: #FFFFFF;
+}
+
+.residenceText3 p span{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.residenceText3 p{
+    width: 47%;
+    position: relative;
+    padding-left: 30px;
+}
+
+.workContainer {
+    padding: 80px 80px 20px 80px !important;
+    background: #000 !important;
+    
+}
+.workContainer p, .workContainer span, .workContainer ul li{
+    color: #fff;
+}
+
+.workContainer ul li, .workContainer2 ul li{
+    border-bottom: 1px solid #fff;
+}
+
+.workContainer2{
+    padding: 80px 80px 20px 80px !important;
+    background: #0657DE !important;
+}
+
+.workContainer2 p, .workContainer2 span, .workContainer2 ul li{
+    color: #fff;
+}
+
+.workText1 p{
+    position: relative;
+    padding-left: 30px;
+    width: 53%;
+}
+.workText1 p span, .workText2 p span{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.workText1 h3{
+    padding-bottom: 70px;
+}
+.workText2{
+    padding-top: 100px;
+}
+.workText2 p{
+    width: 50%;
+    margin-left: auto;
+    position: relative;
+    padding-left: 30px;
+    
+}
+.workText7 p{
+    width:40%;
+}
+.workContainer3{
+    padding: 80px 80px 20px 80px !important;
+    background: #0000 !important;
+}
+
+.smartcontent {
+    padding: 100px 80px !important;
+}
+
+.extentionText1 ul li{
+    color:#000 ;
+    border-bottom: 1px solid #000;
+}
+.immiParaText p, .immiPara p {
+    font-size: 22px;
+    line-height: 42px;
+}
+
+.accountSec2 .anu_audit li{
+    border-bottom:1px solid #000 !important;
+}
+
+
+/*-------------responsive--------------------*/
+
+@media (max-width: 1680px) {
+    .textCard p {
+        font-size: 18px;
+        line-height: 30px;
+    }
+
+    .textCard a {
+        border: 1px solid #000206;
+        padding: 16px 28px;
+        font-size: 15px;
+    }
+
+    .textCard h5 {
+        font-size: 38px;
+        line-height: 47px;
+    }
+
+    .leftText h5 {
+        font-size: 46px;
+        line-height: 60px;
+        padding-right: 10%;
+    }
+
+    .rightText {
+        padding: 0 0 2% 28% !important;
+    }
+
+    .TextBody p {
+        font-size: 15px;
+        line-height: 26px;
+        letter-spacing: inherit;
+        margin: 15px 0;
+    }
+
+    .TextInsight h5,
+    .TextInsight p {
+        font-size: 56px;
+        line-height: 60px;
+    }
+
+    .leftSide p {
+        font-size: 40px;
+        line-height: 58px;
+    }
+
+    .rightSide {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 30px;
+    }
+
+    .ImmigrationCard .Card {
+        height: 320px !important;
+    }
+
+    .Banner .Card:last-child {
+        height: 270px !important;
+    }
+
+
+    /* --------------------legal-------------------- */
+    .legalText h2 {
+        font-size: 70px;
+        line-height: 90px;
+    }
+
+    .legalText p {
+        font-size: 20px;
+        line-height: 33px;
+        width: 93%;
+    }
+
+    .CardBody p {
+        width: 100%;
+    }
+
+    .infoText ul li {
+        list-style-type: none;
+        font-size: 38px;
+        line-height: 95px;
+    }
+
+    .legalAnim .Card p {
+        font-size: 155px !important;
+    }
+
+    .CompanyInfo ul li {
+        padding: 40px 87px;
+    }
+
+    .DocsInfo p {
+        font-size: 45px;
+        line-height: 60px;
+    }
+
+    .DocsInfo ul li span {
+        font-size: 19px;
+        line-height: 35px;
+    }
+
+    .eligibilityCard p {
+        width: 52%;
+        padding-top: 20px;
+    }
+
+    .accountText p {
+        font-size: 45px;
+        line-height: 60px;
+    }
+
+    .activityContainer h5 {
+        font-size: 35px;
+    }
+
+    .thailandOffice h5 {
+        font-size: 94px
+    }
+
+    .comma p {
+        font-size: 35px !important;
+        line-height: 50px !important;
+    }
+
+    .officeDiv p {
+        font-size: 21px;
+        line-height: 35px;
+    }
+
+    .thailandOffice ol li {
+        font-size: 19px;
+    }
+
+    .leftDiv p {
+        width: 45%;
+    }
+
+    .blackTheme {
+        font-size: 21px;
+        line-height: 37px;
+    }
+
+    .rightDiv ol {
+        width: 51%;
+    }
+
+    .bandCard h5 {
+        font-size: 45px;
+        line-height: 60px;
+    }
+
+    .bandCard p {
+        font-size: 19px;
+        line-height: 39px;
+        width: 99%;
+    }
+
+    .activityInfo ul li {
+        padding: 30px;
+    }
+
+    .businessCard {
+        padding-left: 60px !important;
+    }
+
+    .accountText p {
+        font-size: 20px !important;
+        line-height: 36px !important;
+    }
+
+    .quoteSec h5 {
+        font-size: 26px;
+        line-height: 40px;
+    }
+
+    .accountSec2 ul li {
+        font-size: 36px;
+    }
+
+    .acct_text h4 {
+        font-size: 70px;
+        line-height: 82px;
+    }
+
+    .bannerImg2 img {
+        height: 570px;
+    }
+
+    .upBanner .bannerText p {
+        font-size: 20px;
+        line-height: 38px;
+    }
+
+    .immiSec1 .immiPara {
+        padding-top:25%;
+    }
+
+    .immiSec1 .quoteSec h5 {
+        font-size: 36px;
+        line-height: 55px;
+    }
+    .accountText h2 {
+        font-size: 60px;
+        line-height: 67px;
+    }
+
+    .immiDiv p {
+        font-size: 20px;
+        line-height: 37px;
+    }
+
+    .airportText1 p, .airportText p {
+        font-size: 22px;
+        line-height: 41px;
+    }
+
+  
+    .immiSecText p {
+        width: 72%;
+        font-size: 22px;
+        line-height: 40px;
+    }
+    .immiSecText1 p, .immiSecText2 p {
+        font-size: 22px;
+        line-height: 40px;
+    }
+    .actText1 div:first-child {
+        width: 45%;
+        font-size: 22px;
+        line-height: 38px;
+    }
+    .actText1 div:last-child {
+        padding-top: 13%;
+        font-size: 22px;
+        line-height: 38px;
+    }
+    .actText2 div:first-child {
+        width: 46%;
+        font-size: 22px;
+        line-height: 38px;
+    }
+    .actText2 div:last-child {
+        padding-top: 17%;
+        font-size: 22px;
+        line-height: 38px;
+    }
+
+    .actText3 div:first-child {
+        width: 37%;
+        font-size: 22px;
+        line-height: 38px;
+    }
+    .actText3 div:last-child {
+        font-size: 22px;
+        line-height: 38px;
+    }
+    .immiParaText p, .immiPara p{
+        font-size: 20px;
+        line-height:35px;
+    }
+
+    .immiContent p {
+        font-size: 20px;
+        line-height: 36px;
+    }
+    .residenceFormText p {
+        font-size: 50px;
+        line-height: 62px;
+    }
+    .add_service h4 {
+        font-weight: 600;
+        font-size: 25px;
+        line-height: 42px;
+    }
+    .add_service p {
+        font-size: 20px;
+        line-height: 32px;
+    }
+    .smartComma h5 {
+        font-size: 35px;
+        line-height: 50px;
+    }
+    .visaText p {
+        font-size: 20px;
+        line-height: 33px;
+    }
+    .visaFormText p {
+        font-size: 45.481px;
+        line-height: 60px;
+    }
+    .visaForm form {
+        padding: 45% 0 15% 0 !important;
+    }
+
+    .BvisaSec4 h5, .BvisaSec5 h5, .BvisaSec6 h5 {
+        font-size: 60px;
+        line-height: 80px;
+    }
+    .BvisaSec4 p, .BvisaText1 p, .BvisaText2 p {
+        font-size: 22px;
+        line-height: 36px;
+    }
+
+    .BvisaSec4 h5, .BvisaSec5 h5, .BvisaSec6 h5, .BvisaSec7 h5 {
+        font-size: 55px;
+        line-height: 70px;
+    }
+    .BvisaSec7 p {
+        font-size: 20px;
+        line-height: 35px;
+    }
+    .BvisaSecComma h5 {
+        font-size: 35px;
+        line-height: 50px;
+    }
+    .retireText p {
+        font-size: 20px;
+        line-height: 35px;
+        position: relative;
+        padding-left: 30px;
+    }
+    .retireText p span{
+        position: absolute;
+        top: 0;
+        right:0;
+    }
+    .retireText4 p {
+        width: 45%;
+        margin-bottom: 0px;
+    }
+    .retireText p {
+        margin-bottom: 0px;
+    }
+    .retireText1 p{
+        position: relative;
+        padding-left: 30px;
+    }
+    .retireText1 p span{
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+  
+    .workText1 h3{
+        font-size: 55px;
+        line-height: 70px;
+    }
+  
+}
+
+@media (max-width: 1560px) {
+    .textCard p {
+        width: 90%;
+    }
+
+    .Card:hover p {
+        font-size: 120px !important;
+        bottom: 20px;
+        left: -52%;
+    }
+
+    .Card:hover p small {
+        font-size: 120px !important;
+    }
+
+    .legalCard:hover p {
+        left: -203% !important;
+        top: 5% !important;
+    }
+
+    .ImmigrationCard .Card:hover:first-child p {
+        left: -326% !important;
+    }
+
+    .ImmigrationCard .Card {
+        height: 308px !important;
+    }
+
+    .CardBody p {
+        font-size: 21px;
+        line-height: 34px;
+    }
+
+    /* legal */
+    .CompanyInfo ul li {
+        padding: 40px 100px;
+        font-size: 16px;
+    }
+
+    .DocsInfo ul li span {
+        font-size: 18px;
+    }
+
+    .DocsInfo p {
+        font-size: 42px;
+        line-height: 54px;
+    }
+
+    .eligibilityCard p {
+        width: 55%;
+    }
+
+    .comma p {
+        font-size: 32px !important;
+    }
+
+    .thailandOffice ol li,
+    .rightDiv ol li {
+        font-size: 22px;
+        line-height: 36px !important;
+        margin-bottom: 17px;
+    }
+
+    .officeDiv p {
+        font-size: 19px;
+        line-height: 34px;
+    }
+
+    .blackTheme {
+        font-size: 18px;
+        line-height: 35px;
+    }
+
+    .leftDiv p {
+        width: 43%;
+    }
+
+    .bandCard h5 {
+        width: 85%;
+    }
+
+    .bandCard p {
+        font-size: 17px;
+        line-height: 37px;
+        width: 97%;
+    }
+
+    .businessCard {
+        padding-left: 60px !important;
+    }
+
+    .activityContainer h5 {
+        font-size: 32px;
+    }
+
+    .activityInfo ul li {
+        padding: 22px;
+    }
+
+    .activityInfo p {
+        font-size: 17px;
+        line-height: 30px;
+    }
+
+    .accountText p {
+        font-size: 40px;
+        line-height: 54px;
+    }
+
+    .airportText1 p, .airportText p {
+        font-size: 20px;
+        line-height: 37px;
+    }
+    .immiContent p {
+        font-size: 18px;
+        line-height: 34px;
+    }
+    .quoteSec h5 {
+        font-size: 32px;
+        line-height: 50px;
+    }
+    .immiSecText p, .immiSecText2 p, .immiSecText1 p  {
+        font-size: 20px;
+        line-height: 38px;
+    }
+    .actText1 div:first-child, .actText1 div:last-child,  
+    .actText2 div:first-child, .actText2 div:last-child, .actText3 div:first-child, .actText3 div:last-child{
+        font-size: 20px;
+        line-height: 36px;
+    }
+
+    .upBanner2 p {
+        font-size: 20px;
+    }
+    .smartComma h5 {
+        font-size: 32px;
+        line-height: 45px;
+    }
+    .visaFormText p {
+        font-size: 43.481px;
+        line-height: 58px;
+    }
+    .visaText p {
+        font-size: 20px;
+        line-height: 33px;
+        width: 36%;
+    }
+    .smartComma h5 {
+        font-size: 30px;
+    }
+
+    .accountText p {
+        font-size: 19px !important;
+        line-height: 33px !important;
+    }
+
+    .accountText h2 {
+        font-size: 50px;
+        line-height: 60px;
+    }
+    .BvisaSec7 p {
+        font-size: 18px;
+        line-height: 33px;
+    }
+    .BvisaSec4 p, .BvisaText1 p, .BvisaText2 p {
+        font-size: 17px;
+        line-height: 30px;
+    }
+    /* .BvisaSec4 h5, .BvisaSec5 h5, .BvisaSec6 h5 {
+        font-size: 30px;
+        line-height: 45px;
+    } */
+    .BvisaSec7 p {
+        font-size: 17px;
+        line-height: 31px;
+    }
+    .BvisaSec7 h5 {
+        font-size: 65px;
+        line-height: 85px;
+    }
+    .workText2 p {
+        width: 52%;
+    }
+}
+
+@media (max-width: 1460px) {
+    .textCard p {
+        width: 95%;
+    }
+
+    .designImg p {
+        font-size: 36px !important;
+        line-height: 42px !important;
+    }
+
+    .textCard p {
+        font-size: 16px;
+        line-height: 26px;
+    }
+
+    .textCard h5 {
+        font-size: 32px;
+        line-height: 38px;
+    }
+
+    .textCard a {
+        padding: 13px 28px;
+        font-size: 15px;
+        margin: 0;
+    }
+
+    .ImmigrationCard .Card:hover .clickBtn {
+        top: 22%;
+        z-index: 2;
+    }
+
+    .ImmigrationCard .Card {
+        height: 300px !important;
+    }
+
+    /* legal */
+
+    .legalText h2 {
+        font-size: 65px;
+        line-height: 80px;
+    }
+
+    .legalText p {
+        font-size: 18px;
+    }
+
+    .CardBody p {
+        font-size: 19px;
+    }
+
+    .infoText ul li {
+        font-size: 37;
+        line-height: 95px;
+    }
+
+    .legalAnim .Card p {
+        font-size: 133px !important;
+    }
+
+    .CompanyInfo p {
+        font-size: 47px;
+        line-height: 64px;
+    }
+
+    .CompanyInfo ul li h5 {
+        font-size: 20px;
+    }
+
+    .CompanyInfo ul li {
+        font-size: 18px;
+        padding: 40px 65px;
+    }
+    .accountText p {
+        font-size: 18px !important;
+        line-height: 31px !important;
+    }
+
+    .upBanner .bannerText p {
+        font-size: 18px;
+        line-height: 35px;
+    }
+    .immiParaText p, .immiPara p {
+        font-size: 18px;
+        line-height: 32px;
+    }
+
+    .immiSec1 .quoteSec h5 {
+        font-size: 29px;
+        line-height: 50px;
+    }
+    .immiContent p {
+        font-size: 19px;
+        line-height: 33px;
+    }
+    .accountText p {
+        font-size: 17px !important;
+        line-height: 32px !important;
+    }
+
+    .accountSec3 ul li {
+        align-items: inherit ;
+    }
+    .acct_text h4 {
+        font-size: 60px;
+        line-height: 68px;
+    }
+    .acct_text p {
+        line-height: 34px;
+        font-size: 19px;
+    }
+    .quoteSec h5 {
+        font-size: 30px;
+        line-height: 45px;
+    }
+    .immiDiv p, .airportText1 p, .airportText p,   .immiSecText p, .immiSecText2 p, .immiSecText1 p {
+        font-size: 19px;
+        line-height: 33px;
+    }
+
+    .actText1 div:first-child, .actText1 div:last-child, .actText2 div:first-child, .actText2 div:last-child, .actText3 div:first-child, .actText3 div:last-child {
+        font-size: 19px;
+        line-height: 33px;
+    }
+    .BvisaSecComma h5 {
+        font-size: 30px;
+        line-height: 45px;
+    }
+    .BvisaSec7 h5 {
+        font-size: 58px;
+        line-height: 75px;
+    }
+    .retireText p {
+        font-size: 17px;
+        line-height: 30px;
+    }
+    .workText2 p {
+        width: 55%;
+    }
+} 
+
+@media (max-width: 820px) {
+    .Card {
+        margin-bottom: 25px;
+    }
+
+    .homeContainer {
+        padding: 0px 20px !important;
+    }
+
+    .legalCard .Card {
+        height: 400px !important;
+    }
+
+    .legalCard .Card img {
+        object-fit: cover;
+        height: 100%;
+    }
+
+    .ImmigrationCard .Card {
+        height: 400px;
+    }
+
+    .CardContainer {
+        padding: 8px 0 50px 0;
+    }
+
+    .leftText h5 {
+        font-size: 38px;
+        line-height: 50px;
+        padding-right: 0;
+    }
+
+    .rightText {
+        padding: 2% 0 !important;
+    }
+
+    .service {
+        padding: 60px 0;
+    }
+
+    .service {
+        margin-bottom: 30px;
+    }
+
+    .formContainer {
+        padding: 60px 30px !important;
+    }
+
+    .leftSide,
+    .rightSide,
+    .resp0 {
+        padding: 0 !important;
+    }
+
+    .homeForm {
+        padding: 0 !important;
+        margin: 70px 0px 0 0;
+    }
+
+    .homeForm span {
+        right: 0;
+    }
+
+}
